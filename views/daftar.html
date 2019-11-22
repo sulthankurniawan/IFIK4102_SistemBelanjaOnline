@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Easybucket</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+	<link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div>
+        <form id="daftar" class="modal-content animate" action="" method="POST">
+            <div class="imgcontainer">
+                <img src="/assets/thumbnail3.png" alt="avatar" class="avatar">
+                <br>
+                <div>
+                    <p><b>Daftar</b></p>
+                </div>
+                <div class="container">
+                    <div>
+                        <label for="fullname">Nama Lengkap: </label>
+                        <input type="text" id="fullname" name="fullname" placeholder="Naruto Uzumaki" required>
+                    </div>
+                    <div>
+                        <label for="username">Username: </label>
+                        <input type="text" id="username" name="username" placeholder="narutouzumaki" required>
+                    </div>
+                    <div>
+                        <label for="email">Email: </label>
+                        <input type="email" id="email" name="email" placeholder="uzumaki@ninjamail.com" required>
+                    </div>
+                    <div>
+                        <label for="tgllahir">Tanggal Lahir: </label>
+                        <div>
+                            <input type="text-field" id="tempat" name="tempat" placeholder="Tempat Lahir" required>
+                            <input type="date" id="tanggal" name="tanggal" placeholder="Tanggal Lahir" required>
+                        </div>
+                    </div>
+                    <div>
+                        <label for="password" id="pass1">Password: </label>
+                        <input type="password" id="password" name="password1" placeholder="***********" required onkeyup="check()">
+                    </div>
+                    <div>
+                        <label for="confirm_password" id="pass2">Konfirmasi Password: </label>
+                        <input type="password" name="password2" id="confirm_password" placeholder="***********" required onkeyup="check()">
+                    </div>
+                    <span id="message"></span>
+                </div>
+                <div class="container">
+                    <button class="login" type="submit">Daftar</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+</body>
+</html>
